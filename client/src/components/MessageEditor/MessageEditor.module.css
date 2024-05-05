@@ -1,0 +1,39 @@
+.messageEditor {
+  display: flex;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.messageInput {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  resize: none;
+}
+
+.messageInput:focus-visible {
+  outline-color: #4b4b4b;
+}
+
+.sendButton {
+  padding: 10px 20px;
+  background-color: #4b4b4b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sendButton:disabled {
+  background-color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .messageEditor {
+    position: static;
+  }
+}

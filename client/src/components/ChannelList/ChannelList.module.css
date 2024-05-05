@@ -1,0 +1,60 @@
+.title {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(245, 245, 245);
+}
+
+.navigation {
+  background-color: rgb(245, 245, 245);
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s;
+  z-index: 1000;
+}
+
+.show {
+  left: 0;
+}
+
+.channelList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.channelList li {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.channelList li:hover {
+  background-color: #e8e8e8;
+}
+
+.selectedChannel {
+  background-color: #b8b8b8;
+}
+
+.sidebarToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    left: 0;
+  }
+
+  .sidebarToggle {
+    display: none;
+  }
+}
