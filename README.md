@@ -1,3 +1,6 @@
+## About the application
+The message board consists of multiple named channels. Channels contain messages written by users. Users can select a channel from a list of channels, view messages in the selected channel, and submit new messages to the selected channel. Board is implemented as a single-page web application in React and a simple backend in NodeJS.
+
 ## Getting Started
 
 Follow these instructions to get the project running on your local machine for development.
